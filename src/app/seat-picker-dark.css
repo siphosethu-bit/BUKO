@@ -1,0 +1,81 @@
+.candlelit-picker {
+  --seat-bg: #110e0c; --seat-panel: #1a1613; --seat-line: #3a322b;
+  --seat-text: #f1e9dc; --seat-muted: #b5a58e; --seat-gold: #e0a84a;
+  background: radial-gradient(ellipse at top left, #302218, var(--seat-bg) 65%);
+  color: var(--seat-text); border: 1px solid #594836; border-radius: 20px;
+  width: min(1320px, calc(100vw - 40px));
+}
+.candlelit-picker p { color: var(--seat-muted); }
+.candlelit-picker .eyebrow { color: var(--seat-gold); }
+.candlelit-picker .seating-dialog-header { padding: 28px 30px 20px; border: 0; }
+.candlelit-picker .seating-dialog-header h2 { font-size: clamp(30px, 3.5vw, 46px); }
+.candlelit-picker .seating-close { color: var(--seat-text); border-color: #665443; border-radius: 50%; background: var(--seat-panel); }
+.candlelit-picker .seating-visit-details { background: transparent; border: 0; padding: 0 30px 22px; gap: 10px; }
+.candlelit-picker .seating-visit-details > label { border: 1px solid var(--seat-line); border-radius: 28px; padding: 7px 14px; background: var(--seat-panel); }
+.candlelit-picker .seating-visit-details input, .candlelit-picker .seating-visit-details select { color: var(--seat-text); color-scheme: dark; }
+.candlelit-picker select option { background: var(--seat-panel); }
+.candlelit-picker .seating-visit-details > span, .candlelit-picker .seating-timezone { color: var(--seat-muted); }
+.candlelit-picker .seating-dialog-body { grid-template-columns: minmax(0, 1fr) 290px; gap: 20px; padding: 0 24px 24px; }
+.candlelit-picker .seating-map-panel, .candlelit-picker .seating-selection { border: 1px solid var(--seat-line); border-radius: 18px; background: var(--seat-panel); }
+.candlelit-picker .seating-map-panel { padding: 14px; }
+.candlelit-picker .seating-map-toolbar { padding: 0 0 16px; gap: 10px; align-items: flex-start; }
+.candlelit-picker .zone-chips { gap: 6px; }
+.candlelit-picker .zone-chips button { color: var(--seat-muted); border-color: var(--seat-line); background: transparent; min-height: 34px; font-size: 11px; padding: 6px 11px; border-radius: 30px; }
+.candlelit-picker .zone-chips button.on { background: var(--seat-gold); border-color: var(--seat-gold); color: #21170b; }
+.candlelit-picker .seating-map-tools button { background: transparent; border-color: var(--seat-line); color: var(--seat-text); border-radius: 50%; }
+.candlelit-picker .seating-map-viewport { background: #1d1916; border-radius: 9px; }
+.candlelit-picker .room-architecture > rect:first-of-type { fill: #211b16; }
+.candlelit-picker .room-architecture > rect:nth-of-type(3) { fill: #22221b; }
+.candlelit-picker .room-architecture pattern path { stroke: #4c3e2f; }
+.candlelit-picker .room-wall { stroke: #e8dcc5; stroke-width: 5; }
+.candlelit-picker .room-architecture text { fill: #b5a58e; }
+.candlelit-picker .tabletop-fill { fill: #4a3526; stroke: #745337; stroke-width: 1.5; }
+.candlelit-picker .map-table:hover .tabletop-fill { fill: #62452e; }
+.candlelit-picker .map-table-number { color: #eee1c8; }
+.candlelit-picker .map-table-caption { color: var(--seat-muted); }
+.candlelit-picker .map-seat .seat-body { background: #2b241f; border-color: #bfae92; box-shadow: 0 -3px 0 #ad997c; }
+.candlelit-picker .map-seat { min-width: 26px; min-height: 26px; }
+.candlelit-picker .map-seat.seat-selected .seat-body { background: var(--seat-gold); border-color: #f3c877; color: #21170b; box-shadow: 0 -3px 0 #f3c877, 0 0 10px #e0a84a80; }
+.candlelit-picker .map-seat.seat-taken .seat-body { background: #4b423a; border-color: #95846d; color: #e2d3bd; border-style: dashed; box-shadow: none; }
+.candlelit-picker .map-seat:hover .seat-body { border-color: #f3c877; }
+.candlelit-picker .map-seat:focus-visible, .candlelit-picker .map-table-body:focus-visible { outline-color: #f3c877; }
+.candlelit-picker .candle-flame { fill: #f3c877; }
+.candlelit-picker .candle-glow { fill: #ffd788; opacity: .38; }
+.candlelit-picker .seating-map-legend { border: 0; color: var(--seat-muted); padding: 17px 4px 0; gap: 15px; }
+.candlelit-picker .legend-available { background: #2b241f; border-color: #bfae92; }
+.candlelit-picker .legend-selected { background: var(--seat-gold); border-color: #f3c877; }
+.candlelit-picker .legend-booked { background: #4b423a; border: 1px dashed #a38f74; }
+.candlelit-picker .seating-selection { padding: 22px; }
+.candlelit-picker .seating-availability { border-color: var(--seat-line); color: var(--seat-muted); }
+.candlelit-picker .seat-tally { color: var(--seat-muted); }
+.candlelit-picker .seat-tally strong { color: var(--seat-gold); }
+.candlelit-picker .seat-meter { background: #30271f; }
+.candlelit-picker .seat-meter i { background: var(--seat-gold); }
+.candlelit-picker .seat-chip { background: #3c2d1c; border-color: #866332; color: #f3c877; }
+.candlelit-picker .seat-chip button { color: #f3c877; }
+.candlelit-picker .seat-chips-empty { color: var(--seat-muted); }
+.candlelit-picker .seat-limit { color: #f3c877; }
+.candlelit-picker .seating-feedback { color: #ffd3c1; background: #452a23; border-color: #895749; }
+.candlelit-picker .seating-selection-actions .button-gold { background: var(--seat-gold); border-color: var(--seat-gold); color: #21170b; border-radius: 12px; }
+.candlelit-picker .seating-no-preference { color: #dfcaa6; }
+.candlelit-picker .seating-dialog-footer { display: none; }
+.seat-visit-summary { margin: 20px 0; padding: 16px 0; border-block: 1px solid var(--seat-line); font-size: 11px; }
+.seat-visit-summary > div { display: flex; justify-content: space-between; gap: 15px; margin: 8px 0; }
+.seat-visit-summary dt { color: var(--seat-muted); }
+.seat-visit-summary dd { margin: 0; text-align: right; }
+@media(max-width: 900px) {
+  .candlelit-picker .seating-dialog-body { grid-template-columns: 1fr; }
+  .candlelit-picker .seating-map-scale { min-width: 800px; }
+  .candlelit-picker .seating-selection { display: block; }
+}
+@media(max-width: 640px) {
+  .candlelit-picker { width: 100vw; height: 100dvh; max-height: 100dvh; border-radius: 0; margin: 0; }
+  .candlelit-picker .seating-dialog-header { padding: 22px 18px; }
+  .candlelit-picker .seating-visit-details { padding: 0 18px 20px; }
+  .candlelit-picker .seating-dialog-body { padding: 0 12px 20px; gap: 14px; }
+  .candlelit-picker .seating-map-viewport { max-height: 500px; }
+  .candlelit-picker .seating-map-toolbar { flex-wrap: wrap; }
+}
+@media(prefers-reduced-motion: reduce) {
+  .candlelit-picker *, .candlelit-picker *::before, .candlelit-picker *::after { animation-duration: .01ms !important; animation-delay: 0ms !important; transition-duration: .01ms !important; }
+}

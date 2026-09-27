@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1050}});
+page.on('pageerror',e=>console.log('PAGE ERROR',e.message));
+await page.goto('http://localhost:3000/reservations',{waitUntil:'networkidle'});
+console.log('Reservation information:',await page.locator('.time-picker-empty').allTextContents());
+await page.getByRole('button',{name:/Explore the floor plan/}).click();
+await page.screenshot({path:'.local/seating-desktop.png'});
+console.log('Dialog:',await page.locator('.seating-availability').textContent());
+console.log('Table count:',await page.locator('dialog .map-table').count());
+await page.setViewportSize({width:390,height:844});
+await page.screenshot({path:'.local/seating-mobile.png'});
+await browser.close();

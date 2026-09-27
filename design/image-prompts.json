@@ -1,0 +1,26 @@
+{
+  "mode": "Built-in image_gen tool",
+  "reference": "ChatGPT Image Sep 24, 2026, 11_55_59 AM.png",
+  "prompts": [
+    [
+      "hero",
+      "Create ONE high resolution 3:1 panoramic restaurant food photograph for a website hero. Reconstruct ONLY the large hero photograph in the attached reference, no website UI or text. Very closely match its exact composition: a warm dark dining room, a round rustic walnut table entering from center to right, black handmade ceramic plate with a single realistic glazed braised beef portion resting on pale potato puree, three small carrots, tiny natural green herb sprigs. Dish centered around 67% of image width, a single anatomically correct red wine glass behind the dish near 75% width with continuous straight stem, a small candle and water glass further behind. Folded plain ivory linen napkin at far right. Leftmost 35% is dark softly defocused restaurant negative space for real HTML text. Low table-level editorial photography, 50mm lens, natural shallow depth of field, amber practical lamps and candlelight, subtle highlights, accurate real-world glass reflections. Keep plate circular in perspective and food edible and physically plausible. Rich detail with natural imperfections, no fake crunchy oversharpening, no plastic food, no impossible cutlery, no extra glasses fused together. No lettering, logos, typography, watermarks or UI anywhere. High resolution at least 2400 pixels wide if possible."
+    ],
+    [
+      "lamb",
+      "Create ONE high resolution close-up editorial food photograph, landscape 4:3 composition, based closely on the Karoo Lamb dish photograph in the attached restaurant website reference. ONLY the food photograph, no website layout. Two realistically sized grilled lamb rib chops with clean exposed rib bones, natural browned herb crust, a little glossy jus, seasonal vegetables and a few delicate fresh herb leaves on a dark ceramic plate. Warm dim restaurant background and shallow depth of field. Camera at plate level tilted slightly down. Crisp natural lamb texture, restrained garnish, realistic bones and meat, appetising and believable. No extravagant piles, no abstract food objects, no text, no logos, no UI. Premium restaurant editorial photograph, natural warm light, detailed enough for 1000 pixel wide display."
+    ],
+    [
+      "kingklip",
+      "Create ONE high resolution close-up editorial food photograph, landscape 4:3, matching the middle Line-Caught Kingklip dish photograph in the attached website reference. ONLY a standalone food photograph, no layout or text. One believable pan-roasted white fish fillet with golden seared top and delicate natural flakes, on a dark ceramic plate with a modest spoon of pale citrus beurre blanc, seasonal small green vegetables, a few orange segments and just three tiny edible purple flowers. Warm dining room background softly out of focus. Low three-quarter angle, restaurant menu photography. Natural edible food and controlled portion, accurate fish anatomy as a cooked boneless fillet. No plastic glaze, no tangled impossible garnishes, no duplicate objects. No text, watermark, logos or UI. Fine natural detail for 1000 pixel wide display."
+    ],
+    [
+      "chocolate",
+      "Create ONE high resolution close-up restaurant dessert photograph, landscape 4:3, matching the rightmost Dark Chocolate Mousse photograph in the attached reference. Only the food image, no website. A single smooth dark chocolate mousse quenelle or dome with realistic rich chocolate texture, set on a dark round ceramic dessert plate with a small scattering of golden honeycomb crumbs, one delicate lacy tuile behind it, and a little burnt orange element. Natural understated plating, warm dark restaurant bokeh behind, shallow depth of field, side lighting. Correct real food physics, edible balanced presentation, no excessive decor, no floating objects, no text, no logo, no UI. Clean high resolution editorial photograph."
+    ],
+    [
+      "interior",
+      "Create ONE high resolution 3:1 panoramic architectural restaurant interior photograph closely matching the bottom restaurant interior photograph of the attached website reference. Only interior photo with NO text or UI. Sophisticated intimate dining room at evening with dark timber vertical slats, warm taupe plaster walls, charcoal upholstered chairs and booths, round walnut dining tables neatly set for two or four, clear wine glasses with single continuous stems, small votive candles and ivory napkins, one elegant indoor olive tree with subtle warm illumination near the center-right, a discreet bar in the background. Realistic room geometry, coherent architectural perspective and practical walking space between tables. No people. Authentic hospitality magazine photography with natural material textures, warm subdued 2700K lighting, restrained ambience, sharp enough to inspect furniture. Avoid duplicated furniture, melted chair legs, impossible table settings, dangling glassware or fake glowy gold. No writing on walls, logos, watermarks, text or website UI. At least 2400 pixels wide if possible."
+    ]
+  ]
+}

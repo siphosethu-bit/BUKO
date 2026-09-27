@@ -1,0 +1,7 @@
+import Image from 'next/image';
+import { Clock, Users, CalendarDays } from 'lucide-react';
+import { getSite } from '@/lib/data';
+import { PageIntro } from '@/components/page-intro';
+import { ReservationForm } from '@/components/public-forms';
+export const metadata={title:'Reserve a Table',alternates:{canonical:'/reservations'}};
+export default async function Page(){const {settings,connected}=await getSite();return <main id="main" className="page-main"><PageIntro eyebrow="Reservations" title="There’s a place for you."><p>A catch-up, a celebration, or just because. Tell us when you’d like to join us.</p></PageIntro><div className="form-layout section-wrap"><ReservationForm settings={settings} connected={connected}/><aside className="form-aside"><span className="eyebrow">Good company starts here</span><h2>Good food tastes<br/>better together.</h2><p>Send us your preferred date and time. Our team will be in touch to confirm the details.</p><div className="form-aside-image"><Image src="/images/hero-steak.webp" alt="A warmly set table with food and wine" fill priority sizes="(max-width: 700px) 90vw, 30vw"/></div><div className="detail-row"><CalendarDays/><p>Every request is personally reviewed by our team.</p></div><div className="detail-row"><Clock/><p>All reservation times are in South African Standard Time.</p></div><div className="detail-row"><Users/><p>Celebrating something? Leave us a note when you book.</p></div></aside></div></main>;}
